@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição | SocialApp</title>
+</head>
+<body>
+
+    <div class="container"><!--CONTAINER-->
+        <h1>Inscrever-se </h1>
+        <div class="row"><!--ROW-->
+            <form class="col s6" id="myForm" novalidate>
+                <div class="row"><!--ROW 2-->
+
+                    <div class="input-field col s6">
+                        <label for="firstName"></label>
+                        <input type="text" name="O nome" id="firstName" 
+                        onfocusout="validateFirstName()" placeholder="Nome" />
+                        <span class="helper-text"></span>
+                    </div>
+
+                    <div class="input-field col s6">
+                        <label for="lastName"></label>
+                        <input type="text" name="O sobrenome" id="lastName"
+                        onfocusout="validateLastName()" placeholder="Sobrenome" />
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <label for="password"></label>
+                            <input type="password" name="A senha" id="password"
+                            onfocusout="validatePassword()" placeholder="Senha">
+                            <span class="helper-text"></span>                        
+                        </div>
+
+                        <div class="input-field col s6">
+                            <label for="confirmPassword"></label>
+                            <input type="password" name="Confirmar a senha" id="confirmPassword"
+                            onfocusout="validateConfirmPassword()" placeholder="Confirme a senha">
+                            <span class="helper-text"></span>                        
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="email"></label>
+                        <input type="email" name="O email" id="email" 
+                        onfocusout="validateEmail()" placeholder="Email">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+                <button type="submit" class="btn waves-effect waves-light">
+                    Inscrever-se
+                </button>
+            </form>
+
+            <div class="col s6">
+                <img class="overMouse outMouse" src="images/woman-smartphone.jpg" style="width: 100%;
+                 border-radius: 6px; opacity: 0.67;">
+            </div>
+
+        </div><!--(END)ROW-->
+    </div><!--(END)CONTAINER-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script lang="text/javascript" src="script.js"></script>
+</body>
+</html>
